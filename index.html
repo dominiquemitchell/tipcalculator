@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Rock+Salt&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <h2>STEP 1: How much was the bill?</h2>
+    <input type= "number" id="bill-amount"></input>
+    <h2>STEP 2: How was the service?</h2>
+    <button id="terrible" onclick="terribleCalculator()">Terrible</button>
+    <button id="poor" onclick="poorCalculator()">Poor</button>
+    <button id="good" onclick="goodCalculator()">Good</button>
+    <button id="great" onclick="greatCalculator()">Great</button>
+    <button id="excellent" onclick="excellentCalculator()">Excellent</button>
+    <h2>You should tip:</h2>
+    <p>(Appears after selecting a service rating)</p>
+    <p id="tip-amount"></p>
+    <button id="split-check" onclick="numberOfPeople()">Need to split the check?</button>
+    <div id="split-it"></div>
+    <div id="split-it-2"></div>
+    <button id="refresh" onClick="window.location.reload();">Start Over</button>
+    <script src="script.js"></script>
+  </body>
+</html>
